@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //program to print a array of five names in reverses order.
+        let name = ["Chirag","Jay","Jiya","Swati","Asit"];
+        let names = name.reverse();
+        for(let i=0; i<names.length; i++){
+            console.log(names[i])
+        }
+
+        //Create a array of  country objects having name capital and population as properties. Print the countries whose population is less than 2000
+
+        let country = [ 
+            {
+                capital:"india",
+                population:4550
+            },
+            {
+                capital:"canada",
+                population:1200
+            },
+            {
+                capital:"Russia",
+                population:5600
+            },
+            {
+                capital:"brazil",
+                population:1800
+            },
+            {
+                capital:"USA",
+                population:2800
+            },
+            { 
+                capital:"china",
+                population:1789
+            },
+        ]
+        for(let i=0; i<=country.length; i++){
+            if(country[i].population < 2000){
+                console.log("The name of countries whose population is less than 2000 is " + country[i].capital)
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>
